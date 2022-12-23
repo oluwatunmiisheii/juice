@@ -1,11 +1,12 @@
 import type { PropsWithChildren, FC } from "react";
-import { Footer } from "./footer/footer";
+import { Footer } from "./Footer/footers";
+import { Navigation } from "./Navigation/Navigation";
 
 export const Layout: FC<PropsWithChildren<{}>> = ({ children }) => {
   return (
     <div>
-      <header></header>
-      <main>{children}</main>
+      <Navigation />
+      <main className="text-customBlack">{children}</main>
       <Footer />
     </div>
   );

@@ -7,7 +7,9 @@ export const StoryBody = () => {
       <Section
         title="Section title goes here"
         description="Here goes some subtitle but it might unecessary to use it as below goes the section content."
-      ></Section>
+      >
+        <p></p>
+      </Section>
     </>
   );
 };
