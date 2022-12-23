@@ -1,0 +1,35 @@
+.button {
+  @apply inline-flex items-center  border px-5 py-2 text-base font-medium rounded-xl transition-all duration-150 ease-in-out;
+
+  &[focus] {
+    outline: none;
+  }
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+    @apply bg-gray-300;
+  }
+}
+.primary {
+  @apply bg-customBlack text-white border-customBlack;
+}
+
+.secondary {
+  @apply bg-customGrayLight text-customBlack border-customGrayLight;
+}
+
+.tertiary {
+  @apply bg-transparent text-customBlack border-customBlack;
+}
+
+.small {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.medium {
+  @apply px-6 py-3;
+}
+
+.large {
+  @apply px-9 py-3.5;
+}
