@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "../Button/Button";
 import { CheckList } from "../CheckList/CheckList";
 
-export const TalentEnquiry = () => {
+export const Guidance = () => {
   return (
     <div className="bg-customBlack w-full h-[580px] relative">
       <Container>

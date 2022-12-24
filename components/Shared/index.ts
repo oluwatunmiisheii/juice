@@ -7,3 +7,4 @@ export * from "./PageHero/PageHero";
 export * from "./Accordion/Accordion";
 export * from "./UseCases/UseCases";
 export * from "./Form";
+export * from "./Card/Card";

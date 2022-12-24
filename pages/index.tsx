@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Guidance, UseCases } from "@/components/Shared";
+import { Benefits, Info, Hero } from "@/components/Home";
 
 export default function Home() {
   return (
@@ -9,6 +11,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Hero />
+      <Info />
+      <Benefits />
+      <UseCases />
+      <Guidance />
     </>
   );
 }

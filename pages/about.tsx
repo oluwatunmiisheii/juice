@@ -1,5 +1,5 @@
 import { Hero, Values, Team } from "@/components/About";
-import { TalentEnquiry } from "@/components/Shared";
+import { Guidance } from "@/components/Shared";
 
 export default function About() {
   return (
@@ -7,7 +7,7 @@ export default function About() {
       <Hero />
       <Values />
       <Team />
-      <TalentEnquiry />
+      <Guidance />
     </>
   );
 }

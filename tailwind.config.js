@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: () => ({
         "nav-gradient": `linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%)`,
+        "hero-gradient": `linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)`,
         "contact-gradient": `linear-gradient(180deg, #E3FFE9 0%, #F8F8F8 100%)`,
       }),
     },
