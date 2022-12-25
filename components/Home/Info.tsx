@@ -4,8 +4,14 @@ import Image from "next/image";
 export const Info = () => {
   return (
     <Section title="Accept and process payments in a secure and scalable way" description="">
-      <div className="bg-white rounded-xl backdrop-blur-[20px] flex justify-between pl-10 pt-10 flex-col md:flex-row mt-10 mb-6">
-        <div className="basis-[45%] flex-shrink-0">
+      <div
+        className="bg-white rounded-xl backdrop-blur-[20px] flex justify-between pl-10 pt-10 flex-col md:flex-row mt-10 mb-6"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="100"
+        data-aos-delay="200"
+      >
+        <div className="basis-[100%] md:basis-[45%] flex-shrink-0">
           <h3 className="mb-4 text-[28px] leading-[42px] font-bold">Speedy settlements</h3>
           <p className="text-lg leading-8 tracking-[0.37px]">
             Legacy payments take up to 4 business days to settle. With Juice’s rapid payment system, payments settle in
@@ -13,13 +19,20 @@ export const Info = () => {
           </p>
         </div>
         <div className="basis-[45%] relative">
-          <div className="w-full h-[280px]">
+          <div className="w-full h-[280px]" data-aos="fade-down" data-aos-offset="100" data-aos-delay="400">
             <Image src="/images/about/value-img.svg" fill alt="info image" />
           </div>
         </div>
       </div>
-      <div className="p-10 bg-[#5D57F6] text-customGrayLight rounded-xl mb-6">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+
+      <div
+        className="p-6 md:p-10 bg-[#5D57F6] text-customGrayLight rounded-xl mb-6"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="100"
+        data-aos-delay="400"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
           <div>
             <h3 className="text-[28px] leading-[42px] font-bold">$50 for for all payin and payout transactions</h3>
           </div>
@@ -33,11 +46,17 @@ export const Info = () => {
             hour. We offer clear pricing and no surprise fees.
           </p>
         </div>
-        <div className="w-full h-[500px] relative mt-6">
+        <div
+          className="w-full h-[250px] md:h-[500px] relative mt-6"
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-offset="100"
+          data-aos-delay="600"
+        >
           <Image src="/images/dash-analytics.png" fill alt="dashboard-analytics" />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
           <Card.Icon src="/images/benefits/kyc-fraud.svg" size={88} />
           <Card.Title>Security enabled</Card.Title>
@@ -56,7 +75,7 @@ export const Info = () => {
         </Card>
       </div>
       <div className="bg-customBlack rounded-xl mt-6 text-customGrayLight p-10">
-        <div className="grid grid-cols-2 gap-y-6 gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8">
           <div>
             <h3 className="text-[28px] leading-[42px] font-bold">$50 for for all payin and payout transactions</h3>
           </div>

@@ -1,23 +1,25 @@
-import { Button } from "@/components/Shared";
+import { useState } from "react";
+import { Button, SlideOver } from "@/components/Shared";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
 const links = [
   {
-    name: "Documentation",
-    href: "/",
-  },
-  {
-    name: "Benefits",
+    name: "About",
     href: "/about",
   },
   {
-    name: "Use cases",
-    href: "/services",
+    name: "Blog",
+    href: "/articles",
   },
   {
-    name: "Guidance",
-    href: "/blog",
+    name: "Terms",
+    href: "/terms-and-conditions",
+  },
+  {
+    name: "FAQ",
+    href: "#",
   },
 ];
 
@@ -36,21 +38,53 @@ const DesktopNavigation = () => {
           </li>
         ))}
       </ul>
-      <Button variant="tertiary" size="small" className="!px-5">
-        Contact Us
-      </Button>
+      <Link href="/contact-us">
+        <Button variant="tertiary" size="small" className="!px-5">
+          Contact Us
+        </Button>
+      </Link>
     </nav>
   );
 };
 
 const MobileNavigation = () => {
+  const [show, setShow] = useState(false);
   return (
-    <nav className="flex justify-between w-full items-center h-full lg:hidden">
-      <Link href="/">
-        <Image src="/images/full-logo.svg" alt="Logo" width={100} height={80} />
-      </Link>
-      {/* // hamburger menu goes here */}
-    </nav>
+    <>
+      <nav className="flex justify-between w-full items-center h-full lg:hidden">
+        <Link href="/">
+          <Image src="/images/full-logo.svg" alt="Logo" width={100} height={80} />
+        </Link>
+        <button onClick={() => setShow(true)}>
+          <Bars3Icon className="h-6 w-6" />
+        </button>
+      </nav>
+      <SlideOver>
+        <SlideOver.Header>
+          <div className="flex justify-end">
+            <SlideOver.Close type="close" />
+          </div>
+        </SlideOver.Header>
+        <SlideOver.Body>
+          <ul className="space-y-7">
+            {links.map((link) => (
+              <li key={link.name}>
+                <Link href={link.href} className="text-2xl">
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/contact-us">
+                <Button variant="tertiary" size="small" className="!px-5">
+                  Contact Us
+                </Button>
+              </Link>
+            </li>
+          </ul>
+        </SlideOver.Body>
+      </SlideOver>
+    </>
   );
 };
 

@@ -10,10 +10,10 @@ interface SectionProps {
 
 export const Section: FC<SectionProps> = ({ title, description, children, background = "" }) => {
   return (
-    <section className={`${background} py-16`}>
+    <section className={`${background} py-8 md:py-16`}>
       <Container>
         <div className="w-full lg:w-1/2">
-          <h2 className="text-[40px] leading-[54px] font-bold mb-6">{title}</h2>
+          <h2 className="text-[32px] leading-[40px] md:text-[40px] md:leading-[54px] font-bold mb-6">{title}</h2>
           <p className="text-lg leading-[32px] text-customGray tracking-[0.37px]">{description}</p>
         </div>
         {children}

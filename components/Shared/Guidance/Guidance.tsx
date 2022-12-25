@@ -5,9 +5,9 @@ import { CheckList } from "../CheckList/CheckList";
 
 export const Guidance = () => {
   return (
-    <div className="bg-customBlack w-full h-[580px] relative">
+    <div className="bg-customBlack w-full min-h-[580px] relative">
       <Container>
-        <div className="w-1/2 flex flex-col items-center h-full">
+        <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="text-[#EEEEEE] py-16 pr-6">
             <h4 className="text-[40px] font-bold leading-[54px] mb-6">
               Do you think you’re a <br /> good fit?
@@ -28,8 +28,11 @@ export const Guidance = () => {
             </Button>
           </div>
         </div>
+        <div className="w-full lg:hidden h-[300px]">
+          <Image src="/images/talent.png" height={600} width={600} alt="Talent" className="h-full w-full" />
+        </div>
       </Container>
-      <div className="absolute right-0 h-full top-0 w-1/2">
+      <div className="absolute right-0 h-full top-0 w-1/2 hidden lg:block">
         <Image src="/images/talent.png" height={600} width={600} alt="Talent" className="h-full w-full" />
       </div>
     </div>

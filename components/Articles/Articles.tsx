@@ -91,7 +91,7 @@ const articles = [
 export const Articles = () => {
   return (
     <Container>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {articles.map((article) => (
           <div key={article.id}>
             <div className="h-[320px]">

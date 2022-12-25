@@ -15,7 +15,7 @@ export default function Home() {
       <Info />
       <Benefits />
       <UseCases />
-      <Guidance />
+      {/* <Guidance /> */}
     </>
   );
 }

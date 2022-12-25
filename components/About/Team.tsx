@@ -109,7 +109,7 @@ export const Team = () => {
       {teams.map((team, index) => (
         <div key={index} className="mt-10">
           <h3 className="text-[28px] leading-[42px] font-bold mb-4">{team.title}</h3>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {team.members.map((member, i) => (
               <div key={i} className="bg-white rounded-xl backdrop-blur-[20px]">
                 <Image src={member.image} height={240} width={100} alt={member.name} className="w-full" />

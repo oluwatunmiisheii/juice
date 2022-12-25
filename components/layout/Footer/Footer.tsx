@@ -48,7 +48,7 @@ export const Footer = () => {
   return (
     <footer className="bg-customPurple py-16">
       <Container>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-8 md:px-0">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           <div className="flex items-start">
             <div className="mr-3">
               <Image src="/images/juice-icon.svg" width={32} height={32} alt="" />

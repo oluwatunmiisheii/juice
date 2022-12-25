@@ -58,7 +58,7 @@ export const Benefits = () => {
   return (
     <Section title="Benefits" description="Why Juice">
       <div className="mt-10">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {benefits.map((benefit) => (
             <Card key={spacesToUnderScore(benefit.title)}>
               <Card.Icon src={benefit.image} size={88} />
@@ -70,7 +70,7 @@ export const Benefits = () => {
       </div>
 
       <div className="bg-customBlack rounded-xl mt-6 text-customGrayLight">
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
           {metrics.map((metric) => {
             return (
               <Card key={spacesToUnderScore(metric.title)} extraClasses="bg-customBlack">

@@ -7,7 +7,7 @@ interface CardProps {
 }
 
 export const Card = ({ children, extraClasses }: CardProps) => {
-  return <div className={`bg-white rounded-xl backdrop-blur-[20px] p-10 ${extraClasses}`}>{children}</div>;
+  return <div className={`bg-white rounded-xl backdrop-blur-[20px] p-6 md:p-10 ${extraClasses}`}>{children}</div>;
 };
 
 const Title = ({ children }: PropsWithChildren) => (

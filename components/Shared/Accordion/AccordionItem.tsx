@@ -20,12 +20,12 @@ export const AccordionItem: FC<AccordionItemProps> = ({ children, value, title, 
       <div className={`bg-white backdrop-blur-[20px] rounded-xl ${className}`}>
         <button
           onClick={() => toggle(value)}
-          className="w-full py-8 px-6 flex justify-between items-center"
+          className="w-full p-6 md:py-8 md:px-6 flex justify-between items-center"
           aria-controls={`accordion-${value}-header`}
           aria-expanded={open}
           id={`accordion-${value}`}
         >
-          <h3 className="font-bold tracking-[0.37px] leading-8 text-[28px]">{title}</h3>
+          <h3 className="font-bold tracking-[0.37px] text-[22px] leading-8 md:text-[28px] text-left">{title}</h3>
           <div className="rounded-xl bg-[#EEEEEE] p-2 flex items-center justify-between">
             <ChevronDownIcon className={classnames("w-4 h-4 transition", { "transform rotate-180": open })} />
           </div>

@@ -11,9 +11,9 @@ export const Hero = () => {
     >
       <div className="pt-10">
         <p className="text-lg leading-[32px] font-bold">Discover what matters most to you</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6">
           {categories.map((category) => (
-            <Button key={spacesToUnderScore(category)} className="justify-center uppercase" size="small">
+            <Button key={spacesToUnderScore(category)} className="justify-center uppercase w-auto" size="small">
               {category}
             </Button>
           ))}

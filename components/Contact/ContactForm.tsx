@@ -2,7 +2,7 @@ import { Button, Input, TextArea } from "@/components/Shared";
 
 export const ContactForm = () => {
   return (
-    <div className="bg-white rounded-xl p-10">
+    <div className="bg-white rounded-xl p-6 md:p-10">
       <form>
         <Input name="first_name" placeholder="First name (required)" required />
         <Input name="last_name" placeholder="First name (required)" required />
