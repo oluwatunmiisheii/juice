@@ -60,7 +60,7 @@ Below are the pre-requisites needed to run the project:
 
 3. Run app in development mode
 
-   - `yarn`
+   - `yarn dev`
 
 ## Authors
 
