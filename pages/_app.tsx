@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import "../styles/globals.scss";
-import { Layout } from "../components/Layout/Layout";
+import { Layout } from "@/components/Layouts/Layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
