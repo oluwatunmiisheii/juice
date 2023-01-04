@@ -59,7 +59,7 @@ const MobileNavigation = () => {
           <Bars3Icon className="h-6 w-6" />
         </button>
       </nav>
-      <SlideOver>
+      <SlideOver open={show} setOpen={setShow}>
         <SlideOver.Header>
           <div className="flex justify-end">
             <SlideOver.Close type="close" />

@@ -4,7 +4,7 @@ import { Button } from "../Shared";
 export const Hero = () => {
   return (
     <div className="bg-[url('/images/hero.png')] bg-cover min-h-[500px] w-full bg-center flex items-center justify-center text-center relative py-16">
-      <div className="w-full lg:w-[50%]">
+      <div className="w-full lg:w-[50%] px-6 md:px-0">
         <h1
           className="text-[40px] leading-[56px] md:text-[56px] md:leading-[70px] font-bold text-center mb-6"
           data-aos="fade-up"

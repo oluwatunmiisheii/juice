@@ -1,21 +1,24 @@
-import { Fragment, ReactNode, useCallback, createContext, useContext, useState, useMemo, useEffect } from "react";
+import { Fragment, ReactNode, createContext, useContext, useMemo, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { ChevronLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useRouter } from "next/router";
 
-const SlideOverContext = createContext({ open: false, toggle: (value: boolean) => {} });
+const SlideOverContext = createContext({ open: false, setOpen: (value: boolean) => {} });
 
 interface SlideOverProps {
   children: ReactNode;
+  open: boolean;
+  setOpen: (val: boolean) => void;
 }
 
-const SlideOver = ({ children }: SlideOverProps) => {
-  const [open, setOpen] = useState(true);
+const SlideOver = ({ children, open, setOpen }: SlideOverProps) => {
+  const router = useRouter();
+  const value = useMemo(() => ({ open, setOpen }), [open, setOpen]);
 
-  const toggle = useCallback((value: boolean) => {
-    setOpen(value);
-  }, []);
-
-  const value = useMemo(() => ({ open, toggle }), [open, toggle]);
+  useEffect(() => {
+    setOpen(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router.pathname]);
 
   return (
     <SlideOverContext.Provider value={value}>
@@ -56,13 +59,13 @@ const Body = ({ children }: { children: ReactNode }) => {
 };
 
 const Close = ({ type }: { type: "back" | "close" }) => {
-  const { toggle } = useSlideOverContext();
+  const { setOpen } = useSlideOverContext();
 
   return (
     <button
       type="button"
       className="bg-white rounded-md text-gray-800 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-      onClick={() => toggle(false)}
+      onClick={() => setOpen(false)}
     >
       <span className="sr-only">Close panel</span>
       {type === "back" ? (

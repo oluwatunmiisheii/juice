@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Guidance, UseCases } from "@/components/Shared";
-import { Benefits, Info, Hero } from "@/components/Home";
+import { Benefits, Info, Hero, Documentation } from "@/components/Home";
 
 export default function Home() {
   return (
@@ -13,9 +13,10 @@ export default function Home() {
       </Head>
       <Hero />
       <Info />
+      <Documentation />
       <Benefits />
       <UseCases />
-      {/* <Guidance /> */}
+      <Guidance />
     </>
   );
 }

@@ -34,14 +34,16 @@ export const Info = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
           <div>
-            <h3 className="text-[28px] leading-[42px] font-bold">$50 for for all payin and payout transactions</h3>
+            <h3 className="text-[28px] leading-[42px] font-bold" data-aos="fade-up">
+              $50 for for all payin and payout transactions
+            </h3>
           </div>
           <div />
-          <p className="text-lg tracking-[0.37px] leading-[32px]">
+          <p className="text-lg tracking-[0.37px] leading-[32px]" data-aos="fade-up">
             Using Juice rails, cross border payments is simple. See your transfers settle as soon as the next business
             hour. We offer clear pricing and no surprise fees.
           </p>
-          <p className="text-lg tracking-[0.37px] leading-[32px]">
+          <p className="text-lg tracking-[0.37px] leading-[32px]" data-aos="fade-up">
             Using Juice rails, cross border payments is simple. See your transfers settle as soon as the next business
             hour. We offer clear pricing and no surprise fees.
           </p>

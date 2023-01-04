@@ -8,7 +8,7 @@ export const CheckList: FC<CheckListProps> = ({ items }) => {
   return (
     <ul className="flex flex-col space-y-4 font-normal">
       {items.map((item, index) => (
-        <li className="flex items-center" key={index}>
+        <li className="flex items-center" key={index} data-aos="fade-up" data-aos-delay="500">
           <Image
             src="/images/success-check.svg"
             height={16}

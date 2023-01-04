@@ -17,7 +17,7 @@ export const AccordionItem: FC<AccordionItemProps> = ({ children, value, title, 
 
   return (
     <>
-      <div className={`bg-white backdrop-blur-[20px] rounded-xl ${className}`}>
+      <div className={`bg-white backdrop-blur-[20px] rounded-xl ${className}`} data-aos="fade-up" data-aos-delay="500">
         <button
           onClick={() => toggle(value)}
           className="w-full p-6 md:py-8 md:px-6 flex justify-between items-center"
