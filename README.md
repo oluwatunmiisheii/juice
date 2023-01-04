@@ -45,8 +45,8 @@ Below are the pre-requisites needed to run the project:
 
   You can follow the instructions for installation outlined on the website.
 
-- **ReactJS**
-  <br> This is the javascript frontend framework utilized in building the Frontend application. There is no need to install ReactJS independently on your system because it is a project dependency which will be installed once you install the Portal project packages.
+- **NextJS**
+  <br> This is the ReactJS frontend framework utilized. There is no need to install NextJS independently on your system because it is a project dependency which will be installed once you install the project packages.
 
 ## Getting started
 
