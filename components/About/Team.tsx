@@ -118,7 +118,7 @@ export const Team = () => {
                   <p className="text-lg leading-[32px] tracking-[0.37px] text-customGray">{member.position}</p>
                   <div className="mt-6">
                     <Link href={member.linkedin} target="_blank">
-                      <Image src="/images/linkedin.svg" height={24} width={24} alt={`${member.name} LinkedIn`} />
+                      <Image src="/images/linkeddin.svg" height={24} width={24} alt={`${member.name} LinkedIn`} />
                     </Link>
                   </div>
                 </div>
