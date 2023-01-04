@@ -5,7 +5,7 @@ export const Info = () => {
   return (
     <Section title="Accept and process payments in a secure and scalable way" description="">
       <div
-        className="bg-white rounded-xl backdrop-blur-[20px] flex justify-between pl-10 pt-10 flex-col md:flex-row mt-10 mb-6"
+        className="bg-white rounded-xl backdrop-blur-[20px] flex justify-between px-6 pt-6 lg:pr-0 lg:pl-10 lg:pt-10 flex-col md:flex-row mt-10 mb-6"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-offset="100"

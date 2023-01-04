@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Guidance = () => {
   return (
-    <div className="bg-customBlack w-full min-h-[580px] relative" data-aos="fade-up">
+    <div className="bg-customBlack w-full min-h-[580px] relative">
       <Container>
         <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="text-[#EEEEEE] py-16 pr-6">
