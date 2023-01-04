@@ -72,4 +72,4 @@ Below are the pre-requisites needed to run the project:
 
 ## Live Link (Vercel)
 
-[Click here](https://wlabel.vercel.app/)
+[Click here](https://juice-rho.vercel.app/)
