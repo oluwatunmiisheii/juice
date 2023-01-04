@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# juice
 
-## Getting Started
+- [juice](#juice)
+  - [Technology Used](#technology-used)
+  - [Directory structure](#directory-structure)
+  - [Prerequisites](#prerequisites)
+  - [Getting started](#getting-started)
+  - [Authors](#authors)
+  - [Live Link (Vercel)](#live-link-vercel)
 
-First, run the development server:
+## Technology Used
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Next.js](https://nextjs.org/)
+- [Yarn](https://yarnpkg.com)
+- [TailwindCss](https://tailwindcss.com/)
+
+## Directory structure
+
+```
+/
+|   |-- components/                                  # App components
+|   |   |-- About/                                   # Components used by about page
+|   |   |-- Articles/                                # Components used by articles page
+|   |   |-- Contact/                                 # Components used by contact us page
+|   |   |-- Home/                                    # Components used by landing us page
+|   |   |-- Layout/                                  # App layout
+|   |   |-- Shared/                                  # Shared components
+|   |
+|   |-- pages                                        # App pages
+|   |-- public                                       # Folder for app assets
+|   |-- styles                                       # Folder for app global styles
+|   |-- utils                                        # Folder for app utils
+|   |
+|-- |-- .github                                      # GitHub Actions
+|-- |-- .husky                                       # Pre push and pre commit hooks
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Below are the pre-requisites needed to run the project:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **NodeJS (v18)**
+  <br> This is the JavaScript Runtime Environment for running JavaScript on the server, you can download NodeJS when you visit the url, https://www.nodejs.org/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  You can follow the instructions for installation outlined on the website.
 
-## Learn More
+- **ReactJS**
+  <br> This is the javascript frontend framework utilized in building the Frontend application. There is no need to install ReactJS independently on your system because it is a project dependency which will be installed once you install the Portal project packages.
 
-To learn more about Next.js, take a look at the following resources:
+## Getting started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   - `git clone https://github.com/oluwatunmiisheii/juice.git`
 
-## Deploy on Vercel
+2. Install packages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - `yarn install`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Run app in development mode
+
+   - `yarn`
+
+## Authors
+
+👤 **Oluwatunmise Adenuga**
+
+- [LinkedIn](https://www.linkedin.com/in/oluwatunmise-adenuga-08ab34149/)
+- [GitHub](https://github.com/oluwatunmiisheii)
+- [Email](oluwatunmiseadenuga@gmail.com)
+
+## Live Link (Vercel)
+
+[Click here](https://wlabel.vercel.app/)
