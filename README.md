@@ -8,6 +8,8 @@
   - [Authors](#authors)
   - [Live Link (Vercel)](#live-link-vercel)
 
+![lighthouse score](https://user-images.githubusercontent.com/42435593/210693410-e54e86f8-7720-4138-bc3d-0a7c55610d0a.png)
+
 ## Technology Used
 
 - [Next.js](https://nextjs.org/)
