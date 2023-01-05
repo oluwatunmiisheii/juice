@@ -15,6 +15,7 @@ export const Seo = ({ pageTitle }: SeoProps) => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Juice" />
+      <meta name="theme-color" content="#111111" />
     </Head>
   );
 };
