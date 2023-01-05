@@ -20,10 +20,9 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     AOS.init({
       easing: "ease",
       duration: 500,
-      // once: true
     });
     window.addEventListener(
-      "touchmove",
+      "scroll",
       () => {
         AOS.refresh();
       },

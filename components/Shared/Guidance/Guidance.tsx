@@ -25,13 +25,7 @@ export const Guidance = () => {
               ]}
             />
             <Link href="contact-us">
-              <Button
-                className="mt-8"
-                variant="secondary"
-                onClick={() => console.log("Clicked")}
-                data-aos="fade-up"
-                data-aos-delay="700"
-              >
+              <Button className="mt-8" variant="secondary" onClick={() => console.log("Clicked")} data-aos="fade-up">
                 Contact Us
               </Button>
             </Link>
@@ -41,7 +35,7 @@ export const Guidance = () => {
           <Image src="/images/talent.png" height={600} width={600} alt="Talent" className="h-full w-full" />
         </div>
       </Container>
-      <div className="absolute right-0 h-full top-0 w-1/2 hidden lg:block" data-aos="fade-down" data-aos-delay="600">
+      <div className="absolute right-0 h-full top-0 w-1/2 hidden lg:block" data-aos="fade-down">
         <div className="bg-[url('/images/talent.png')] bg-cover h-full bg-center bg-no-repeat" />
       </div>
     </div>

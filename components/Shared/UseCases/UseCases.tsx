@@ -33,7 +33,11 @@ export const UseCases = () => {
             <Button className="mt-8">Contact us</Button>
           </Accordion.Item>
         </Accordion>
-        <div className="px-6 py-8 bg-white backdrop-blur-[20px] rounded-xl mt-4">
+        <div
+          className="px-6 py-8 bg-white backdrop-blur-[20px] rounded-xl mt-4"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <h3 className="font-bold text-[24px] tracking-[0.37px] leading-8 md:text-[28px] mb-6">
             Not sure if you&apos;re a good match?
           </h3>

@@ -93,8 +93,8 @@ export const Articles = () => {
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {articles.map((article) => (
-          <div key={article.id}>
-            <div className="h-[320px]">
+          <div key={article.id} data-aos="fade-up">
+            <div className="h-[320px]" data-aos="fade-down" data-aos-delay="100">
               <Image
                 src={article.image}
                 height={100}
@@ -104,8 +104,10 @@ export const Articles = () => {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-2xl leading-[38px] font-bold line-clamp-2">{article.title}</h3>
-              <p className="text-xs text-customGray uppercase mt-2">
+              <h3 className="text-2xl leading-[38px] font-bold line-clamp-2" data-aos="fade-up" data-aos-delay="200">
+                {article.title}
+              </h3>
+              <p className="text-xs text-customGray uppercase mt-2" data-aos="fade-up" data-aos-delay="300">
                 <span>Category</span>
                 <span className="mx-2">•</span>
                 <span>{article.category}</span>

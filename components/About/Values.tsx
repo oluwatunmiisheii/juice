@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useId } from "react";
 import { spacesToUnderScore } from "@/utils/spacesToUnderScore";
 import Image from "next/image";
 import { Section, Card } from "../Shared";
@@ -45,7 +47,7 @@ export const Values = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {values.slice(1).map((value) => (
-          <Card key={spacesToUnderScore(value.title)}>
+          <Card key={spacesToUnderScore(value.title) + useId()}>
             <Card.Icon src={value.image} size={88} />
             <Card.Title>{value.title}</Card.Title>
             <Card.Body>{value.description}</Card.Body>

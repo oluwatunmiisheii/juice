@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useId } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Section } from "../Shared";
@@ -106,12 +108,12 @@ const teams = [
 export const Team = () => {
   return (
     <Section title="Our Team" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-      {teams.map((team, index) => (
-        <div key={index} className="mt-10">
+      {teams.map((team) => (
+        <div key={useId()} className="mt-10" data-aos="fade-up">
           <h3 className="text-[28px] leading-[42px] font-bold mb-4">{team.title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.members.map((member, i) => (
-              <div key={i} className="bg-white rounded-xl backdrop-blur-[20px]">
+            {team.members.map((member) => (
+              <div key={useId()} className="bg-white rounded-xl backdrop-blur-[20px]" data-aos="fade-up">
                 <Image src={member.image} height={240} width={100} alt={member.name} className="w-full" />
                 <div className="p-10">
                   <h3 className="text-2xl leading-[38px] font-bold mb-2">{member.name}</h3>

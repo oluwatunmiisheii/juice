@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../Shared";
 
 export const Hero = () => {
@@ -19,9 +20,11 @@ export const Hero = () => {
           Juice is an ecosystem of services making business cross border payment less complex, more reliable and
           compliant than ever before.
         </p>
-        <Button data-aos="fade-up" data-aos-delay="400">
-          Contact Us
-        </Button>
+        <Link href="/contact-us">
+          <Button data-aos="fade-up" data-aos-delay="400">
+            Contact Us
+          </Button>
+        </Link>
 
         <div className="mt-16">
           <div className="grid grid-cols-3 md:grid-cols-6" data-aos="fade-up" data-aos-delay="600">
