@@ -9,6 +9,7 @@ export const Seo = ({ pageTitle }: SeoProps) => {
     <Head>
       <title>{pageTitle}</title>
       <meta property="og:type" content="website" />
+      <meta name="description" content="Juice - Fast, simple and secure payments" />
       <meta property="og:url" content="juice.com" />
       <meta property="og:title" content="Juice - simple and secure payments" />
       <meta property="og:description" content="Fast, simple and secure payments" />
