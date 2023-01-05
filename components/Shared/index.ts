@@ -10,3 +10,4 @@ export * from "./Form";
 export * from "./Card/Card";
 export * from "./SlideOver/SlideOver";
 export * from "./Carousel/Carousel";
+export * from "./Seo/Seo";

@@ -1,12 +1,16 @@
 import { Hero } from "@/components/Contact";
-import { UseCases } from "@/components/Shared";
+import { UseCases, Seo } from "@/components/Shared";
 
 const ContactUs = () => {
   return (
-    <div className="bg-contact-gradient">
-      <Hero />
-      <UseCases />
-    </div>
+    <>
+      <Seo pageTitle="Contact Us" />
+      <h1 className="sr-only">Contact</h1>
+      <div className="bg-contact-gradient">
+        <Hero />
+        <UseCases />
+      </div>
+    </>
   );
 };
 

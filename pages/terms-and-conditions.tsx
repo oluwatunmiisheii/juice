@@ -1,8 +1,10 @@
-import { PageHero, Container } from "@/components/Shared";
+import { PageHero, Container, Seo } from "@/components/Shared";
 
 const TermsAndConditions = () => {
   return (
     <>
+      <Seo pageTitle="Terms and Conditions" />
+      <h1 className="sr-only">Terms and Conditions</h1>
       <PageHero title="Terms & conditions" />
       <Container>
         <div className="mb-16">
