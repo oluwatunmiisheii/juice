@@ -9,3 +9,4 @@ export * from "./UseCases/UseCases";
 export * from "./Form";
 export * from "./Card/Card";
 export * from "./SlideOver/SlideOver";
+export * from "./Carousel/Carousel";

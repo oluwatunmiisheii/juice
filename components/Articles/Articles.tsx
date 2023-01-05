@@ -1,5 +1,6 @@
 import { Container } from "../Shared";
 import Image from "next/image";
+import Link from "next/link";
 
 const articles = [
   {
@@ -93,27 +94,33 @@ export const Articles = () => {
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {articles.map((article) => (
-          <div key={article.id} data-aos="fade-up">
-            <div className="h-[320px]" data-aos="fade-down" data-aos-delay="100">
-              <Image
-                src={article.image}
-                height={100}
-                width={100}
-                alt={article.title}
-                className="h-full w-full object-cover"
-              />
+          <Link key={article.id} href={`articles/${article.id}`}>
+            <div className="group" data-aos="fade-up">
+              <div className="h-[320px]" data-aos="fade-down" data-aos-delay="100">
+                <Image
+                  src={article.image}
+                  height={100}
+                  width={100}
+                  alt={article.title}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3
+                  className="text-2xl leading-[38px] font-bold line-clamp-2 group-hover:underline"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  {article.title}
+                </h3>
+                <p className="text-xs text-customGray uppercase mt-2" data-aos="fade-up" data-aos-delay="300">
+                  <span>Category</span>
+                  <span className="mx-2">•</span>
+                  <span>{article.category}</span>
+                </p>
+              </div>
             </div>
-            <div className="p-4">
-              <h3 className="text-2xl leading-[38px] font-bold line-clamp-2" data-aos="fade-up" data-aos-delay="200">
-                {article.title}
-              </h3>
-              <p className="text-xs text-customGray uppercase mt-2" data-aos="fade-up" data-aos-delay="300">
-                <span>Category</span>
-                <span className="mx-2">•</span>
-                <span>{article.category}</span>
-              </p>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </Container>
