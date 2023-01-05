@@ -1,23 +1,24 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import { useId } from "react";
 import { spacesToUnderScore } from "@/utils/spacesToUnderScore";
 import Image from "next/image";
 import { Section, Card } from "../Shared";
 
 const values = [
   {
+    id: "1",
     title: "Lorem Ipsum",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc arcu, iaculis quis ipsum vel, efficitur venenatis lacus. Nulla mattis nulla sem, a tempor urna vehicula sit amet.",
     image: "/images/about/value-img.svg",
   },
   {
+    id: "2",
     title: "Lorem Ipsum",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc arcu, iaculis quis ipsum vel, efficitur venenatis lacus. Nulla mattis nulla sem, a tempor urna vehicula sit amet.",
     image: "/images/cash-in-hand.svg",
   },
   {
+    id: "3",
     title: "Lorem Ipsum",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc arcu, iaculis quis ipsum vel, efficitur venenatis lacus. Nulla mattis nulla sem, a tempor urna vehicula sit amet.",
@@ -47,7 +48,7 @@ export const Values = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {values.slice(1).map((value) => (
-          <Card key={spacesToUnderScore(value.title) + useId()}>
+          <Card key={spacesToUnderScore(value.id)}>
             <Card.Icon src={value.image} size={88} />
             <Card.Title>{value.title}</Card.Title>
             <Card.Body>{value.description}</Card.Body>
