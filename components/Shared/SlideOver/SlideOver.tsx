@@ -66,6 +66,8 @@ const Close = ({ type }: { type: "back" | "close" }) => {
       type="button"
       className="bg-white rounded-md text-gray-800 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
       onClick={() => setOpen(false)}
+      aria-labelledby="Close panel"
+      aria-label="Close panel"
     >
       <span className="sr-only">Close panel</span>
       {type === "back" ? (
