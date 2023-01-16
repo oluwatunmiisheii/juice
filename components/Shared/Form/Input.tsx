@@ -1,4 +1,3 @@
-EyeIcon;
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { useState, InputHTMLAttributes, forwardRef } from "react";
 
